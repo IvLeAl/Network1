@@ -12,10 +12,39 @@ body{
     box-sizing: border-box;
 }
 
-.clear {
+.clearfix:after,
+.clearfix:before{
+    content: " ";
+    display: table;
+}
+.clearfix:after {
     clear: both;
 }
 
+.header {
+    height: 282px;
+}
+
+.wrapper {
+    width: 700px;
+    margin: 0 auto;
+    background-color: #ffec5a;
+}
+.photo {
+    width: 423px;
+    height: 616px;
+    background-image: url("../img/iPhone in hand.png");
+    float: left;
+
+}
+
+
+.registration {
+    background-color: green;
+    border: solid 1px orangered;
+    width: 100px;
+    float: right;
+}
 /*.block {*/
     /*background-color: green;*/
     /*padding: 15px;*/
